@@ -822,15 +822,15 @@ footer .container a:hover {
         flex-wrap: wrap;
     }
 
-    footer .container .box-p {
+    footer .container .box:first-of-type {
         width: 100%;
     }
 
-    footer .container .box:not(.box-p) h3 {
+    footer .container .box:not(:first-of-type) h3 {
         font-size: 13px;
     }
 
-    footer .container .box:not(.box-p) {
+    footer .container .box:not(:first-of-type) {
         font-size: 10px;
     }
 }
