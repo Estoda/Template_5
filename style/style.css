@@ -19,6 +19,7 @@ html {
 
 body {
     font-family: "Josefin Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 ul {
@@ -245,6 +246,20 @@ header .container .right>a {
 @media(max-width:991px) {
     .landing .left {
         width: 100%;
+        padding: 50px 20px
+    }
+
+    .landing .left h1 {
+        font-size: 45px;
+    }
+
+    .landing .left .numbers {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .landing .left .numbers .column {
+        width: 100%;
     }
 
     .landing .image {
@@ -260,6 +275,12 @@ header .container .right>a {
 }
 
 .new-ro .container {}
+
+@media(max-width:767px) {
+    .new-pro .container {
+        padding: 0 0;
+    }
+}
 
 .new-pro .container .header {
     display: flex;
@@ -794,6 +815,24 @@ footer .container a:hover::after {
 
 footer .container a:hover {
     color: white;
+}
+
+@media(max-width:767px) {
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    footer .container .box-p {
+        width: 100%;
+    }
+
+    footer .container .box:not(.box-p) h3 {
+        font-size: 13px;
+    }
+
+    footer .container .box:not(.box-p) {
+        font-size: 10px;
+    }
 }
 
 /* End Footer */
